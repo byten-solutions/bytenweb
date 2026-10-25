@@ -4,64 +4,49 @@ This design system governs the visual language, typography, color tokens, and in
 
 ---
 
-## 1. Design Philosophy
-- **Substance Over Slop**: Never rely on generic AI clichés (such as arbitrary purple-to-indigo gradient cards, blurred radial blobs without purpose, or uniform 12px rounded corners everywhere).
-- **Typographic Hierarchy**: Distinct, readable contrast between display headings, section markers, and functional body copy.
-- **Intentional Spacing**: Generous, rhythmic whitespace adhering to an 8pt grid system.
-- **Purposeful Motion**: Micro-interactions should confirm user actions and guide attention, never distract or delay content consumption.
+## 1. Design Philosophy & Component Framework
+- **shadcn/ui Architecture**: Built on clean, accessible Tailwind CSS v4 and Radix UI primitives (`Button`, `Card`, `Badge`, `Input`, `Textarea`, `Separator`).
+- **Logo Brand Harmony**: Rooted directly in the official Byten logo palette (`#0097B2` vibrant teal and `#124854` deep teal).
+- **Substance Over Slop**: Never rely on generic AI clichés (such as arbitrary purple-to-indigo gradient cards, blurred radial blobs without purpose, or overused fonts).
+- **Typographic Hierarchy**: Distinct, geometric contrast using `DM Sans` (`next/font/google`).
 
 ---
 
-## 2. Color Palette & Tokens
+## 2. Color Palette & shadcn Theme Tokens
 
-### Core Neutral Palette
-- **Canvas / Background**: `#090D16` (Deep technical obsidian)
-- **Surface Elevation 1**: `#111726` (Subtle panel background)
-- **Surface Elevation 2**: `#1B2338` (Active cards / interactive elements)
-- **Border Subtle**: `rgba(255, 255, 255, 0.08)`
-- **Border Focus / Accent**: `rgba(37, 99, 235, 0.5)`
+### Official Brand Logo Colors
+- **Primary Brand (Vibrant Teal)**: `#0097B2` (`rgb(0, 151, 178)` / `hsl(189, 100%, 35%)`)
+- **Secondary Brand (Deep Teal)**: `#124854` (`rgb(18, 72, 84)` / `hsl(191, 65%, 20%)`)
 
-### Typography Colors
-- **Text Primary**: `#F8FAFC` (High contrast, crisp reading)
-- **Text Secondary**: `#94A3B8` (Descriptions, labels, microcopy)
-- **Text Muted**: `#64748B` (Placeholders, inactive timestamps)
-
-### Accent & Brand Accents
-- **Primary Brand**: `#2563EB` (Electric Blue - action, clarity)
-- **Accent Glow**: `#38BDF8` (Cyan - data visualization, selective highlights)
-- **Success**: `#10B981` (Emerald)
-- **Warning**: `#F59E0B` (Amber)
-- **Destructive**: `#EF4444` (Ruby)
+### shadcn CSS Theme Mapping (`app/globals.css`)
+- **`--background`**: `#080E14` (Deep obsidian with subtle marine/teal depth)
+- **`--foreground`**: `#F8FAFC` (Crisp technical white, WCAG AAA contrast)
+- **`--card`**: `#0D1620` (Structured surface elevation)
+- **`--card-foreground`**: `#F8FAFC`
+- **`--primary`**: `#0097B2` (Action buttons, primary highlights)
+- **`--primary-foreground`**: `#FFFFFF`
+- **`--secondary`**: `#124854` (Deep teal badges and secondary actions)
+- **`--secondary-foreground`**: `#E2F5F8`
+- **`--muted`**: `#131E2B`
+- **`--muted-foreground`**: `#94A3B8` (Descriptions, labels, microcopy)
+- **`--border`**: `rgba(0, 151, 178, 0.2)` (Subtle brand border)
+- **`--ring`**: `#0097B2` (Focus states)
 
 ---
 
-## 3. Typography Scale
-- **Display 1**: `font-size: 3.5rem` (56px), `line-height: 1.1`, `font-weight: 700`
-- **Heading 1**: `font-size: 2.25rem` (36px), `line-height: 1.25`, `font-weight: 600`
+## 3. Typography Scale (`DM Sans`)
+- **Display 1**: `font-size: 3.75rem` (60px), `line-height: 1.1`, `font-weight: 700`
+- **Heading 1**: `font-size: 2.25rem` (36px), `line-height: 1.25`, `font-weight: 700`
 - **Heading 2**: `font-size: 1.5rem` (24px), `line-height: 1.35`, `font-weight: 600`
 - **Heading 3**: `font-size: 1.125rem` (18px), `line-height: 1.4`, `font-weight: 600`
 - **Body Large**: `font-size: 1.125rem` (18px), `line-height: 1.6`, `font-weight: 400`
 - **Body Regular**: `font-size: 1rem` (16px), `line-height: 1.5`, `font-weight: 400`
-- **Caption / Label**: `font-size: 0.8125rem` (13px), `letter-spacing: 0.05em`, `font-weight: 500`, uppercase
+- **Caption / Label**: `font-size: 0.8125rem` (13px), `letter-spacing: 0.05em`, `font-weight: 600`, uppercase
 
 ---
 
-## 4. Component Standards
-
-### Buttons
-- **Primary**: Bold contrast, solid `#2563EB` background with `#FFFFFF` text, subtle shadow, 6px border radius.
-- **Secondary / Outline**: 1px border with `Border Subtle`, hover transition into `rgba(255, 255, 255, 0.04)`.
-- **Text / Ghost**: Subtle transition with no background; clear focus rings for accessibility.
-
-### Cards & Panels
-- Must have explicit semantic structure (Header, Body, Actions).
-- Avoid nested cards deeper than 1 level.
-- Border-radius: `8px` or `12px` consistently across components.
-
----
-
-## 5. Anti-Pattern Checklist (Impeccable & Intent Rules)
-- ❌ **No AI Slop Gradients**: Do not wrap whole sections in arbitrary multi-stop rainbow gradients.
+## 4. Anti-Pattern Checklist (Impeccable & Intent Rules)
+- ❌ **No AI Slop Gradients**: Do not wrap headers or text in multi-stop rainbow gradients.
 - ❌ **No Low-Contrast Text**: Text must pass WCAG AA contrast (minimum 4.5:1 ratio for regular text).
-- ❌ **No Mystery Meat Navigation**: All navigation targets and buttons must state clearly what will occur upon click.
-- ❌ **No Unused CSS Bloat**: Rely on Tailwind utility classes and native browser CSS features.
+- ❌ **No Nested Card Spam**: Keep card hierarchy semantic and single-layered.
+- ❌ **No Unused CSS Bloat**: Rely on Tailwind v4 utility classes and shadcn primitives.

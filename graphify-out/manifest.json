@@ -72,15 +72,15 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1792933184.3612194,
-    "seen": 1792933380.5402188,
-    "ast_hash": "c378d2683fadb060518e75f42c3a9f95",
+    "mtime": 1792934587.468194,
+    "seen": 1792934731.5368361,
+    "ast_hash": "b966c6dc8c2ea59705245f3b485e1624",
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1792933511.5772188,
-    "seen": 1792933539.459947,
-    "ast_hash": "a60653e195ad2b036f9577d64f2217f3",
+    "mtime": 1792934952.3100543,
+    "seen": 1792935055.776486,
+    "ast_hash": "028d3f62f5a90c9e193360a7543fc7d8",
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1792930735.5762181,
-    "seen": 1792932231.872271,
-    "ast_hash": "5d6cee0e980e9ec4ae6f53ac074648e8",
+    "mtime": 1792934824.0496101,
+    "seen": 1792935055.7765288,
+    "ast_hash": "37407c9a085978e8cf5afae69304b57a",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -624,9 +624,9 @@
     "semantic_hash": ""
   },
   "docs/DESIGN.md": {
-    "mtime": 1792932211.4350078,
-    "seen": 1792932231.8723352,
-    "ast_hash": "49d33e1e63d078dfd338a6d71a457907",
+    "mtime": 1792934989.1033282,
+    "seen": 1792935055.778584,
+    "ast_hash": "000ea352dd7051e9c848e2976e0d80a6",
     "semantic_hash": ""
   },
   "docs/PRODUCT.md": {
@@ -690,15 +690,15 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792933566.4329937,
-    "seen": 1792933606.199937,
-    "ast_hash": "6651ef59aa5e3ebf206b7b40f7add1b7",
+    "mtime": 1792935019.5357814,
+    "seen": 1792935055.77855,
+    "ast_hash": "aa7d516ce56b5081ce4fefc2cea32481",
     "semantic_hash": ""
   },
   "PROJECT_STATE.md": {
-    "mtime": 1792933583.6766264,
-    "seen": 1792933606.1999528,
-    "ast_hash": "a31638c1d463cccc06e83e8473e5f06d",
+    "mtime": 1792935031.271472,
+    "seen": 1792935055.7785668,
+    "ast_hash": "e93af5d7c7c29685b58c0f46d74b6e70",
     "semantic_hash": ""
   },
   "docs/adr/0001-agent-skillset-and-change-tracking.md": {
@@ -723,6 +723,114 @@
     "mtime": 1792933598.5050526,
     "seen": 1792933606.200039,
     "ast_hash": "1129967d28c6ce8711594d2e4de04db0",
+    "semantic_hash": ""
+  },
+  "app/apple-icon.png": {
+    "mtime": 1792934383.123702,
+    "seen": 1792934731.539095,
+    "ast_hash": "c561fa8bf4ab5578e51269de0325ea89",
+    "semantic_hash": ""
+  },
+  "app/icon.png": {
+    "mtime": 1792934383.1212175,
+    "seen": 1792934731.539097,
+    "ast_hash": "62e91584af327ee89fb2234147e3da6e",
+    "semantic_hash": ""
+  },
+  "public/apple-icon.png": {
+    "mtime": 1792934383.1246157,
+    "seen": 1792934731.539097,
+    "ast_hash": "c561fa8bf4ab5578e51269de0325ea89",
+    "semantic_hash": ""
+  },
+  "public/byten-logo-dark.png": {
+    "mtime": 1792934383.0893898,
+    "seen": 1792934731.539098,
+    "ast_hash": "e5329d58c46bcaaaa945ab1aca4e34c2",
+    "semantic_hash": ""
+  },
+  "public/byten-logo-original.png": {
+    "mtime": 1792934125.7429402,
+    "seen": 1792934731.539099,
+    "ast_hash": "22b9e83edfbf27900d6c783127cd442c",
+    "semantic_hash": ""
+  },
+  "public/byten-logo.png": {
+    "mtime": 1792934383.0823846,
+    "seen": 1792934731.5391,
+    "ast_hash": "5d273c6a9d77f31248b95f0a21811863",
+    "semantic_hash": ""
+  },
+  "public/byten-mark-dark.png": {
+    "mtime": 1792934383.1122258,
+    "seen": 1792934731.539101,
+    "ast_hash": "5da0ada933d1332e0c4950b21d0b0737",
+    "semantic_hash": ""
+  },
+  "public/byten-mark.png": {
+    "mtime": 1792934383.1072452,
+    "seen": 1792934731.5391018,
+    "ast_hash": "62e91584af327ee89fb2234147e3da6e",
+    "semantic_hash": ""
+  },
+  "public/icon.png": {
+    "mtime": 1792934383.1168704,
+    "seen": 1792934731.539147,
+    "ast_hash": "62e91584af327ee89fb2234147e3da6e",
+    "semantic_hash": ""
+  },
+  "components.json": {
+    "mtime": 1792934836.5209756,
+    "seen": 1792935055.7764878,
+    "ast_hash": "3b1c347d9a9e2a1ebdfa939738a3f6fe",
+    "semantic_hash": ""
+  },
+  "components/ui/badge.tsx": {
+    "mtime": 1792934875.3047633,
+    "seen": 1792935055.776489,
+    "ast_hash": "f56cb5a0e48451a4ddea311a4485b026",
+    "semantic_hash": ""
+  },
+  "components/ui/button.tsx": {
+    "mtime": 1792934861.2272828,
+    "seen": 1792935055.77649,
+    "ast_hash": "3452d7df3a2bbff30907e23f2ce18b92",
+    "semantic_hash": ""
+  },
+  "components/ui/card.tsx": {
+    "mtime": 1792934868.585123,
+    "seen": 1792935055.776491,
+    "ast_hash": "030282e05cd986802cc1375e066b34d0",
+    "semantic_hash": ""
+  },
+  "components/ui/input.tsx": {
+    "mtime": 1792934885.3167622,
+    "seen": 1792935055.776492,
+    "ast_hash": "68dbc827a46bb9200543e95e4e75f3c9",
+    "semantic_hash": ""
+  },
+  "components/ui/separator.tsx": {
+    "mtime": 1792934901.6936653,
+    "seen": 1792935055.776493,
+    "ast_hash": "f070934e317201a6d279f96b1e23b2bb",
+    "semantic_hash": ""
+  },
+  "components/ui/textarea.tsx": {
+    "mtime": 1792934893.8381145,
+    "seen": 1792935055.776494,
+    "ast_hash": "080a29bd73e79feb2b4630efe40cd313",
+    "semantic_hash": ""
+  },
+  "lib/utils.ts": {
+    "mtime": 1792934831.3094378,
+    "seen": 1792935055.776512,
+    "ast_hash": "d9837f38cc05303254571985e3164050",
+    "semantic_hash": ""
+  },
+  "docs/adr/0003-shadcn-ui-and-logo-branding.md": {
+    "mtime": 1792935042.3791215,
+    "seen": 1792935055.7786639,
+    "ast_hash": "481de6cdcdd7799543862a91c0036783",
     "semantic_hash": ""
   }
 }

@@ -19,9 +19,11 @@
 | **M2: UI/UX Wireframing & Strategy** | ✅ Complete | Formulated structural layout and high-signal value propositions. |
 | **M3: Component Design & Polish** | ✅ Complete | Built obsidian dark technical theme (`docs/DESIGN.md`) in Tailwind v4. |
 | **M4: Content & Articulation** | ✅ Complete | Replaced template placeholder copy with clear engineering & POS capabilities. |
-| **M5: Production Hardening & Audit** | ✅ Complete | Verified 0 anti-patterns with Impeccable, 0 ESLint errors, and clean Next.js build. |
-| **M6: API Route & Lead Storage** | ⏳ Queued | Connect inquiry form to backend notification/database service. |
-| **M7: Dedicated POS Product Page** | ⏳ Queued | Dedicated showcase for retail hardware, multi-store sync, and live demo requests. |
+| **M5: Brand Identity & Logo Assets** | ✅ Complete | Integrated official Byten logo & mark across navbar, browser tab/favicons, hero, and footer. |
+| **M6: shadcn/ui & Logo Theme** | ✅ Complete | Integrated shadcn/ui primitives (`Button`, `Card`, `Badge`, `Input`, `Textarea`, `Separator`) themed to logo `#0097B2`. |
+| **M7: Production Hardening & Audit** | ✅ Complete | Verified 0 anti-patterns with Impeccable, 0 ESLint errors, and clean Next.js build. |
+| **M8: API Route & Lead Storage** | ⏳ Queued | Connect inquiry form to backend notification/database service. |
+| **M9: Dedicated POS Product Page** | ⏳ Queued | Dedicated showcase for retail hardware, multi-store sync, and live demo requests. |
 
 ---
 

@@ -10,6 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **shadcn/ui Integration & Logo Brand Theme**:
+  - Integrated shadcn/ui component primitives (`Button`, `Card`, `Badge`, `Input`, `Textarea`, `Separator`) with Tailwind CSS v4.
+  - Aligned the entire color system with the official Byten logo: vibrant teal (`#0097B2`) and deep teal (`#124854`) over obsidian slate (`#080E14`).
+  - Added `lucide-react` icon system replacing raw SVGs.
+  - Configured `components.json` and `lib/utils.ts` (`cn()` helper).
+- **Official Brand Identity & Logo Integration**:
+  - Extracted and processed official Byten brand mark and typography from master assets into high-resolution transparent assets: `public/byten-logo.png`, `public/byten-logo-dark.png`, `public/byten-mark.png`, and `public/byten-mark-dark.png`.
+  - Replaced generic placeholder "B" letter boxes with the official Byten logo in the top Navigation Bar (`app/page.tsx`) and Footer (`app/page.tsx`).
+  - Integrated the Byten mark badge into the Hero engineering badge and POS engine status card.
+  - Configured multi-resolution browser tab icons: `app/favicon.ico` and `public/favicon.ico` (16, 32, 48px), `app/icon.png` and `public/icon.png` (512x512), and Apple touch icon `app/apple-icon.png` (180x180).
+  - Configured `metadataBase`, `icons`, `openGraph.images`, and `twitter.images` metadata in `app/layout.tsx`.
 - **Official Homepage Redesign (`app/page.tsx`)**:
   - Implemented 7-section engineering agency layout adhering to `docs/DESIGN.md` and `docs/PRODUCT.md`.
   - Showcased 4 core engineering capabilities: Web Platforms, Mobile Applications, Smart POS & Retail Systems, and Enterprise APIs.
