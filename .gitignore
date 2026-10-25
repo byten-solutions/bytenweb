@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# graphify cache
+graphify-out/cache/
+
+# local native binaries
+.agents/skills/impeccable/scripts/bin/
+
