@@ -3,6 +3,29 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #00768b;
+  --primary-foreground: #ffffff;
+  --secondary: #124854;
+  --secondary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #475569;
+  --accent: #e0f7fa;
+  --accent-foreground: #00687a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(18, 72, 84, 0.15);
+  --input: rgba(18, 72, 84, 0.2);
+  --ring: #00768b;
+  --radius: 0.625rem;
+}
+
+.dark {
   --background: #080e14;
   --foreground: #f8fafc;
   --card: #0d1620;
@@ -10,7 +33,7 @@
   --popover: #0d1620;
   --popover-foreground: #f8fafc;
   --primary: #0097b2;
-  --primary-foreground: #ffffff;
+  --primary-foreground: #080e14;
   --secondary: #124854;
   --secondary-foreground: #e2f5f8;
   --muted: #131e2b;
@@ -22,7 +45,6 @@
   --border: rgba(0, 151, 178, 0.2);
   --input: rgba(0, 151, 178, 0.24);
   --ring: #0097b2;
-  --radius: 0.625rem;
 }
 
 @theme inline {
@@ -57,13 +79,13 @@
   }
   html {
     scroll-behavior: smooth;
-    color-scheme: dark;
   }
   body {
     background-color: var(--background);
     color: var(--foreground);
     min-height: 100vh;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
   ::selection {
     background-color: rgba(0, 151, 178, 0.35);

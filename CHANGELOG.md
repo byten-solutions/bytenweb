@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **White Background Light Mode & Theme Toggle**:
+  - Implemented pure white background (`#FFFFFF`) in light mode matching `public/byten-logo-original.png`.
+  - Added interactive `ThemeToggle` button in the navigation header and mobile menu with seamless Sun/Moon CSS scale/rotation transitions.
+  - Enabled shadcn standard `'d'` keyboard shortcut to toggle themes instantly from anywhere on the page.
+  - Configured `next-themes` provider in `app/layout.tsx` with class-based toggling.
+  - Fixed Next.js Turbopack dev CSS cache to ensure `:root { --background: #ffffff; }` immediately applies pure white in light mode.
+  - Refined light-mode card surfaces (`bg-white` and subtle `bg-slate-50/70` section tiers) so content pops with crisp contrast against the white page background.
 - **shadcn/ui Integration & Logo Brand Theme**:
   - Integrated shadcn/ui component primitives (`Button`, `Card`, `Badge`, `Input`, `Textarea`, `Separator`) with Tailwind CSS v4.
   - Aligned the entire color system with the official Byten logo: vibrant teal (`#0097B2`) and deep teal (`#124854`) over obsidian slate (`#080E14`).

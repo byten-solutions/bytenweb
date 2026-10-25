@@ -14,6 +14,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
+import { ThemeToggle } from "@/components/theme-toggle";
 import {
   Globe,
   Smartphone,
@@ -54,7 +55,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group">
-            <div className="relative h-10 w-10 flex items-center justify-center rounded-lg bg-secondary/40 border border-border p-1">
+            <div className="relative h-10 w-10 flex items-center justify-center rounded-lg bg-transparent border border-transparent dark:bg-secondary/40 dark:border-border p-1 transition-colors">
               <Image
                 src="/byten-mark.png"
                 alt="Byten"
@@ -97,7 +98,8 @@ export default function Home() {
             </a>
           </nav>
 
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle />
             <Button asChild size="default">
               <a href="#contact">
                 Initiate Project
@@ -149,6 +151,10 @@ export default function Home() {
             >
               Contact
             </a>
+            <div className="flex items-center justify-between pt-2 border-t border-border/50">
+              <span className="text-sm font-medium text-muted-foreground">Appearance</span>
+              <ThemeToggle />
+            </div>
             <Button asChild className="w-full justify-center">
               <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
                 Initiate Project
@@ -165,15 +171,15 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="max-w-3xl">
               <Badge variant="brand" className="mb-6 py-1 px-3 text-xs uppercase tracking-wider">
-                <span className="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-primary mr-2" />
                 Production-Grade Digital Engineering
               </Badge>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground leading-tight md:leading-[1.12] mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground leading-tight md:leading-[1.12] mb-6 text-balance">
                 Engineering Scalable Web Platforms, Mobile Apps &amp; Retail POS Systems.
               </h1>
 
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl font-normal">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl font-normal text-pretty">
                 Byten architects high-performance software systems engineered for scale. From cloud-connected Point of
                 Sale infrastructures to responsive web platforms and mobile applications, we deliver clean architecture
                 grounded in measurable business outcomes.
@@ -194,25 +200,25 @@ export default function Home() {
 
             {/* Metric Strip */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-border/60">
-              <div className="p-4 rounded-lg bg-card/40 border border-border/50">
+              <div className="p-4 rounded-lg bg-slate-50/80 dark:bg-card/40 border border-border/50">
                 <div className="text-3xl font-bold text-foreground mb-1">99.9%</div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground font-medium">
                   POS Reliability SLA
                 </div>
               </div>
-              <div className="p-4 rounded-lg bg-card/40 border border-border/50">
+              <div className="p-4 rounded-lg bg-slate-50/80 dark:bg-card/40 border border-border/50">
                 <div className="text-3xl font-bold text-foreground mb-1">&lt; 100ms</div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground font-medium">
                   Target API Latency
                 </div>
               </div>
-              <div className="p-4 rounded-lg bg-card/40 border border-border/50">
+              <div className="p-4 rounded-lg bg-slate-50/80 dark:bg-card/40 border border-border/50">
                 <div className="text-3xl font-bold text-foreground mb-1">Full-Stack</div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground font-medium">
                   Next.js &amp; Mobile Native
                 </div>
               </div>
-              <div className="p-4 rounded-lg bg-card/40 border border-border/50">
+              <div className="p-4 rounded-lg bg-slate-50/80 dark:bg-card/40 border border-border/50">
                 <div className="text-3xl font-bold text-foreground mb-1">End-to-End</div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground font-medium">
                   Architecture to Delivery
@@ -229,20 +235,20 @@ export default function Home() {
               <Badge variant="brand" className="mb-3">
                 Core Capabilities
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight text-balance">
                 Software Solutions Engineered for Measurable Business Impact
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Service 1: Web Platforms */}
-              <Card className="hover:border-primary/50 transition-colors bg-card/60">
+              <Card className="hover:border-primary/50 transition-colors bg-white dark:bg-card/60 shadow-xs">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
-                    <Globe className="size-6" />
+                  <div className="flex items-center gap-3 mb-2">
+                    <Globe className="size-5 text-primary shrink-0" />
+                    <CardTitle className="text-xl">Modern Web Platforms</CardTitle>
                   </div>
-                  <CardTitle className="text-2xl">Modern Web Platforms</CardTitle>
-                  <CardDescription className="text-base text-muted-foreground">
+                  <CardDescription className="text-base text-muted-foreground text-pretty">
                     High-concurrency web applications built with Next.js 16, React Server Components, and TypeScript.
                     Optimized for sub-second Core Web Vitals, enterprise security, and conversion rate efficiency.
                   </CardDescription>
@@ -258,13 +264,13 @@ export default function Home() {
               </Card>
 
               {/* Service 2: Mobile Apps */}
-              <Card className="hover:border-primary/50 transition-colors bg-card/60">
+              <Card className="hover:border-primary/50 transition-colors bg-white dark:bg-card/60 shadow-xs">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
-                    <Smartphone className="size-6" />
+                  <div className="flex items-center gap-3 mb-2">
+                    <Smartphone className="size-5 text-primary shrink-0" />
+                    <CardTitle className="text-xl">Mobile Applications</CardTitle>
                   </div>
-                  <CardTitle className="text-2xl">Mobile Applications</CardTitle>
-                  <CardDescription className="text-base text-muted-foreground">
+                  <CardDescription className="text-base text-muted-foreground text-pretty">
                     Fluid, native-grade mobile applications built for iOS and Android. Engineered with offline persistence,
                     biometric authentication, and frictionless user journeys that maximize long-term retention.
                   </CardDescription>
@@ -280,13 +286,13 @@ export default function Home() {
               </Card>
 
               {/* Service 3: POS Systems */}
-              <Card className="hover:border-primary/50 transition-colors bg-card/60">
+              <Card className="hover:border-primary/50 transition-colors bg-white dark:bg-card/60 shadow-xs">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
-                    <Store className="size-6" />
+                  <div className="flex items-center gap-3 mb-2">
+                    <Store className="size-5 text-primary shrink-0" />
+                    <CardTitle className="text-xl">Point of Sale (POS) Systems</CardTitle>
                   </div>
-                  <CardTitle className="text-2xl">Point of Sale (POS) Systems</CardTitle>
-                  <CardDescription className="text-base text-muted-foreground">
+                  <CardDescription className="text-base text-muted-foreground text-pretty">
                     Enterprise retail infrastructure built for high-throughput retail stores, restaurants, and retail
                     chains. Features offline transaction queues, inventory sync across outlets, and direct hardware
                     integrations.
@@ -303,13 +309,13 @@ export default function Home() {
               </Card>
 
               {/* Service 4: Enterprise Backends */}
-              <Card className="hover:border-primary/50 transition-colors bg-card/60">
+              <Card className="hover:border-primary/50 transition-colors bg-white dark:bg-card/60 shadow-xs">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
-                    <Server className="size-6" />
+                  <div className="flex items-center gap-3 mb-2">
+                    <Server className="size-5 text-primary shrink-0" />
+                    <CardTitle className="text-xl">Enterprise Backends &amp; APIs</CardTitle>
                   </div>
-                  <CardTitle className="text-2xl">Enterprise Backends &amp; APIs</CardTitle>
-                  <CardDescription className="text-base text-muted-foreground">
+                  <CardDescription className="text-base text-muted-foreground text-pretty">
                     Scalable database architectures, REST &amp; GraphQL APIs, and event-driven microservices. Designed
                     for uncompromising data integrity, transactional consistency, and predictable scaling.
                   </CardDescription>
@@ -328,17 +334,17 @@ export default function Home() {
         </section>
 
         {/* POS Systems Deep Dive */}
-        <section id="pos-systems" className="py-24 bg-card/30 border-b border-border/60">
+        <section id="pos-systems" className="py-24 bg-slate-50/70 dark:bg-card/30 border-b border-border/60">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-6">
                 <Badge variant="brand" className="mb-6">
                   Specialized Retail Engineering
                 </Badge>
-                <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-6 leading-tight">
+                <h2 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-6 leading-tight text-balance">
                   Point of Sale Architecture Designed for Zero Downtime
                 </h2>
-                <p className="text-muted-foreground text-base leading-relaxed mb-8 font-normal">
+                <p className="text-muted-foreground text-base leading-relaxed mb-8 font-normal text-pretty">
                   In retail and hospitality, counter downtime is direct lost revenue. Byten POS systems are built with an
                   offline-first architecture: checkout transactions execute locally with zero latency, syncing seamlessly
                   to the central cloud ledger when connectivity permits.
@@ -350,8 +356,8 @@ export default function Home() {
                       <CheckCircle2 className="size-4" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground text-base">Offline Queueing &amp; Sync</h4>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="font-semibold text-foreground text-base">Offline Queueing &amp; Sync</h3>
+                      <p className="text-sm text-muted-foreground text-pretty">
                         Uninterrupted checkout during network outages. Transactions are securely cached locally and
                         automatically reconciled upon connection recovery.
                       </p>
@@ -363,8 +369,8 @@ export default function Home() {
                       <CheckCircle2 className="size-4" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground text-base">Multi-Outlet Inventory Ledger</h4>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="font-semibold text-foreground text-base">Multi-Outlet Inventory Ledger</h3>
+                      <p className="text-sm text-muted-foreground text-pretty">
                         Centralized real-time stock management across warehouses and storefronts with automated reorder
                         alerts.
                       </p>
@@ -376,8 +382,8 @@ export default function Home() {
                       <CheckCircle2 className="size-4" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground text-base">Direct Hardware Drivers</h4>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="font-semibold text-foreground text-base">Direct Hardware Drivers</h3>
+                      <p className="text-sm text-muted-foreground text-pretty">
                         Native communication with ESC/POS thermal receipt printers, 2D barcode scanners, cash drawers, and
                         integrated card terminals.
                       </p>
@@ -388,11 +394,11 @@ export default function Home() {
 
               {/* Architecture Terminal Card */}
               <div className="lg:col-span-6">
-                <Card className="border-border bg-card shadow-2xl p-6">
-                  <div className="flex items-center justify-between border-b border-border/80 pb-4 mb-6">
+                <div className="rounded-xl border border-slate-800 dark:border-border bg-slate-950 dark:bg-card text-slate-100 dark:text-card-foreground shadow-2xl p-6">
+                  <div className="flex items-center justify-between border-b border-slate-800 dark:border-border/80 pb-4 mb-6">
                     <div className="flex items-center gap-2">
                       <Terminal className="size-4 text-primary" />
-                      <span className="text-xs font-mono text-foreground font-semibold">
+                      <span className="text-xs font-mono text-slate-200 dark:text-foreground font-semibold">
                         byten-pos-engine::status
                       </span>
                     </div>
@@ -401,32 +407,30 @@ export default function Home() {
                     </Badge>
                   </div>
 
-                  <div className="space-y-4 font-mono text-xs text-muted-foreground">
-                    <div className="p-3.5 rounded-lg bg-background/80 border border-border/60">
-                      <div className="text-primary font-semibold mb-1">Transaction Throughput</div>
-                      <div className="text-foreground text-sm font-semibold">1,200+ tx/min peak bench tested</div>
+                  <div className="space-y-3 font-mono text-xs text-slate-300 dark:text-muted-foreground divide-y divide-slate-800 dark:divide-border/60">
+                    <div className="pt-1 pb-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <span className="text-primary font-semibold">Transaction Throughput</span>
+                      <span className="text-white dark:text-foreground text-sm font-semibold">1,200+ tx/min bench</span>
                     </div>
-                    <div className="p-3.5 rounded-lg bg-background/80 border border-border/60">
-                      <div className="text-primary font-semibold mb-1">Network Architecture</div>
-                      <div className="text-foreground font-semibold">
-                        Dual-State: Cloud Connected &amp; Local Fallback
-                      </div>
+                    <div className="py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <span className="text-primary font-semibold">Network Architecture</span>
+                      <span className="text-white dark:text-foreground font-semibold">Dual-State (Cloud + Local Fallback)</span>
                     </div>
-                    <div className="p-3.5 rounded-lg bg-background/80 border border-border/60">
-                      <div className="text-primary font-semibold mb-1">Hardware Protocols</div>
-                      <div className="text-foreground">Serial, USB &amp; Network Socket (ESC/POS Compliant)</div>
+                    <div className="pt-3 pb-1 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                      <span className="text-primary font-semibold">Hardware Protocols</span>
+                      <span className="text-white dark:text-foreground">Serial, USB &amp; Socket (ESC/POS)</span>
                     </div>
                   </div>
 
-                  <Separator className="my-6" />
+                  <Separator className="my-6 bg-slate-800 dark:bg-border" />
 
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">Ready to modernize your retail counters?</span>
+                    <span className="text-xs text-slate-400 dark:text-muted-foreground">Ready to modernize your retail counters?</span>
                     <Button asChild variant="link" className="p-0 h-auto font-semibold text-primary">
                       <a href="#contact">Request POS Demo &rarr;</a>
                     </Button>
                   </div>
-                </Card>
+                </div>
               </div>
             </div>
           </div>
@@ -439,13 +443,13 @@ export default function Home() {
               <Badge variant="brand" className="mb-3">
                 Our Engineering Discipline
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight text-balance">
                 Built on First Principles, Not Over-Engineered Bloat
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="bg-card/50">
+              <Card className="bg-white dark:bg-card/50 shadow-xs">
                 <CardHeader>
                   <div className="text-2xl font-bold text-primary mb-2 font-mono flex items-center gap-2">
                     <Zap className="size-5" /> 01
@@ -460,7 +464,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-card/50">
+              <Card className="bg-white dark:bg-card/50 shadow-xs">
                 <CardHeader>
                   <div className="text-2xl font-bold text-primary mb-2 font-mono flex items-center gap-2">
                     <ShieldCheck className="size-5" /> 02
@@ -468,14 +472,14 @@ export default function Home() {
                   <CardTitle className="text-xl">Typed Integrity</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed text-pretty">
                     Strict TypeScript and validated runtime schemas across API boundaries. Regressions are caught during
-                    automated compilation, never in customer production.
+                    automated compilation, never in customer&nbsp;production.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-card/50">
+              <Card className="bg-white dark:bg-card/50 shadow-xs">
                 <CardHeader>
                   <div className="text-2xl font-bold text-primary mb-2 font-mono flex items-center gap-2">
                     <Layers className="size-5" /> 03
@@ -494,7 +498,7 @@ export default function Home() {
         </section>
 
         {/* Inquiry / Contact Section */}
-        <section id="contact" className="py-24 bg-card/40">
+        <section id="contact" className="py-24 bg-slate-50/70 dark:bg-card/40">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
               {/* Left Contact Info */}
@@ -502,10 +506,10 @@ export default function Home() {
                 <Badge variant="brand" className="mb-3">
                   Contact Engineering
                 </Badge>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6 text-balance">
                   Let&apos;s Build Your Next Digital System
                 </h2>
-                <p className="text-muted-foreground text-base leading-relaxed mb-8 font-normal">
+                <p className="text-muted-foreground text-base leading-relaxed mb-8 font-normal text-pretty">
                   Whether you need a custom Point of Sale deployment, a modern Next.js web application, or full-cycle
                   mobile app engineering, our engineers are ready to scope your project.
                 </p>
@@ -568,7 +572,7 @@ export default function Home() {
 
               {/* Right Form with shadcn */}
               <div className="lg:col-span-7">
-                <Card className="p-8 shadow-xl bg-card/90">
+                <Card className="p-8 shadow-xl bg-white dark:bg-card/90">
                   {formSubmitted ? (
                     <div className="text-center py-12">
                       <div className="w-14 h-14 rounded-full bg-primary/20 text-primary flex items-center justify-center mx-auto mb-4">
@@ -655,7 +659,7 @@ export default function Home() {
                           id="timeline"
                           value={formData.timeline}
                           onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                          className="flex h-11 w-full rounded-lg border border-input bg-card/60 px-3 py-2 text-sm text-foreground shadow-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:border-primary"
+                          className="flex h-11 w-full rounded-lg border border-input bg-white dark:bg-card/60 px-3 py-2 text-sm text-foreground shadow-xs focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:border-primary"
                         >
                           <option value="Urgent (&lt; 1 month)">Urgent (&lt; 1 month)</option>
                           <option value="1-2 months">1-2 months</option>
@@ -698,7 +702,7 @@ export default function Home() {
       <footer className="py-12 border-t border-border bg-background">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="relative h-8 w-8 flex items-center justify-center rounded bg-secondary/40 border border-border p-1">
+            <div className="relative h-8 w-8 flex items-center justify-center rounded bg-transparent border border-transparent dark:bg-secondary/40 dark:border-border p-1 transition-colors">
               <Image
                 src="/byten-mark.png"
                 alt="Byten"
