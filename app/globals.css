@@ -693,7 +693,7 @@
 
   .hero__title {
     margin-bottom: clamp(1.75rem, 3vw, 2.75rem);
-    font-size: clamp(3.65rem, 8.6vw, 8.75rem);
+    font-size: clamp(3.65rem, 8.6vw, 8rem);
     color: var(--foreground);
     text-transform: uppercase;
   }
@@ -1858,23 +1858,6 @@
     background: var(--primary);
   }
 
-  .footer__wordmark {
-    position: relative;
-    overflow: hidden;
-    border-top: 1px solid var(--line);
-    padding-block: clamp(2rem, 4vw, 3rem);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-  .footer__wordmark img {
-    width: min(23rem, 50vw);
-    height: auto;
-    filter: none;
-  }
-
   /* ---------- inner pages ---------- */
 
   .page-hero {
@@ -2623,15 +2606,6 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: 0.5rem 1.25rem;
-    }
-
-    .footer__wordmark {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
-    .footer__wordmark img {
-      width: min(20rem, 72vw);
     }
 
     .case-hero__grid {

@@ -69,8 +69,10 @@ Whenever a token changes, recompute the pair rather than trusting the hex.
 
 Scale:
 
-- Hero: `clamp(3.65rem, 8.6vw, 8.75rem)`, 0.86 line-height, three intentional
-  lines: `SOFTWARE / THAT / HOLDS.`
+- Hero: `clamp(3.65rem, 8.6vw, 8rem)` desktop (and a smaller clamp below
+  900px), 0.86 line-height, three intentional lines:
+  `SOFTWARE / THAT / HOLDS.`. The cap keeps the longest word clear of the teal
+  plate at 1920px and above.
 - Section H2: `clamp(2.6rem, 5.6vw, 5.25rem)`, 0.9 line-height.
 - H3: `clamp(1.35rem, 2vw, 1.9rem)`.
 - Body: 1.0625rem, 1.62 line-height.
@@ -106,8 +108,9 @@ or in the margin, never as a small line introducing a heading.
 
 ### Header
 Solid background, sticky, hairline when scrolled. Logo is the supplied raster
-lockup. Scroll progress is a 2px vermilion rule at the bottom edge. Theme
-toggle and primary CTA sit right. Mobile: a native `<dialog>` menu with large
+lockup at 108px (112px in the mobile dialog); do not scale it to fill the bar.
+Scroll progress is a 2px vermilion rule at the bottom edge. Theme toggle and
+primary CTA sit right. Mobile: a native `<dialog>` menu with large
 indexed links, the CTA, direct contact, and the theme toggle. The dialog fills
 the dynamic viewport (with the native `max-height` reset) and scrolls only if
 its content exceeds it. Native dialog provides the focus trap and Escape
@@ -155,8 +158,9 @@ Submit opens a populated `mailto:` draft; a copy button copies the same brief.
 There is no fake success state, no backend, and no silent failure.
 
 ### Footer
-Logo, studio statement, navigation, direct contact, live IST clock, status,
-copyright, back-to-top, and a large supplied lockup as the close.
+A 128px supplied lockup, studio statement, navigation, direct contact, live IST
+clock, status, copyright and back-to-top. There is no oversized repeated
+wordmark at the bottom; the page ends on the footer rule.
 
 ---
 

@@ -10,7 +10,7 @@ export function SiteFooter() {
       <div className="site-container">
         <div className="footer__top">
           <div className="footer__brand">
-            <BytenLogo width={150} />
+            <BytenLogo width={128} />
             <p>
               A digital engineering company building web platforms, mobile
               apps, and retail systems for teams that need them to hold.
@@ -47,10 +47,6 @@ export function SiteFooter() {
           <a href="#top">Back to top</a>
         </div>
 
-        <div className="footer__wordmark" aria-hidden="true">
-          <BytenLogo width={380} />
-          <span className="mono-label">Digital engineering / India</span>
-        </div>
       </div>
     </footer>
   );

@@ -84,7 +84,7 @@ export function SiteHeader() {
             className="site-header__logo"
             aria-label="Byten — home"
           >
-            <BytenLogo priority width={132} />
+            <BytenLogo priority width={108} />
           </Link>
 
           <nav className="site-header__nav" aria-label="Primary">
@@ -130,7 +130,7 @@ export function SiteHeader() {
       >
         <div className="menu-dialog__panel">
           <div className="menu-dialog__top">
-            <BytenLogo width={124} />
+            <BytenLogo width={112} />
             <button
               type="button"
               className="icon-btn"

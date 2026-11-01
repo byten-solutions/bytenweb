@@ -118,6 +118,8 @@ No unused `components/ui` primitives remain.
   horizontal overflow; H1 lines fit without clipping.
 - Mobile menu verified at 320×800 and 390×844: dialog fills the viewport,
   theme row visible, no horizontal overflow, native Escape/focus trap intact.
+- Wide screens verified at 1920×1080 and 2560×1440: header lockup 108px, footer
+  lockup 128px, hero title clears the plate, no horizontal overflow.
 - Form validation verified: `aria-invalid` on every invalid field, first field
   focused, error summary in the live region.
 - Diagram and social-card review corrections applied: `fill="none"` on diagram

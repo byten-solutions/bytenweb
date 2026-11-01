@@ -63,6 +63,10 @@ replaced rather than polished.
   specific studio copy.
 - Contact form now clearly opens a populated email draft; the button says
   “Send brief by email” and the helper sits above the action.
+- Reduced the header lockup to 108px and the footer lockup to 128px, and removed
+  the oversized repeated footer wordmark so the identity appears twice, not
+  three times. The hero display cap is now 8rem so “SOFTWARE” clears the teal
+  plate at 1920px and above.
 - Case pages now show a visible “Brief constraints, not measured results”
   caption, a “What we traded” section for each engagement, and a
   “Have a similar constraint? Send the brief” contact path before the next
