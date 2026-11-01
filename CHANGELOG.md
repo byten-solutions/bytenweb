@@ -9,57 +9,135 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Nothing yet.
+
+---
+
+## [0.2.0] - 2026-11-01
+
+The site was rebuilt from scratch as a portfolio company site under the
+**Load-Bearing** direction. The previous shadcn/dark-SaaS presentation was
+replaced rather than polished.
+
 ### Added
-- **White Background Light Mode & Theme Toggle**:
-  - Implemented pure white background (`#FFFFFF`) in light mode matching `public/byten-logo-original.png`.
-  - Added interactive `ThemeToggle` button in the navigation header and mobile menu with seamless Sun/Moon CSS scale/rotation transitions.
-  - Enabled shadcn standard `'d'` keyboard shortcut to toggle themes instantly from anywhere on the page.
-  - Configured `next-themes` provider in `app/layout.tsx` with class-based toggling.
-  - Fixed Next.js Turbopack dev CSS cache to ensure `:root { --background: #ffffff; }` immediately applies pure white in light mode.
-  - Refined light-mode card surfaces (`bg-white` and subtle `bg-slate-50/70` section tiers) so content pops with crisp contrast against the white page background.
-- **shadcn/ui Integration & Logo Brand Theme**:
-  - Integrated shadcn/ui component primitives (`Button`, `Card`, `Badge`, `Input`, `Textarea`, `Separator`) with Tailwind CSS v4.
-  - Aligned the entire color system with the official Byten logo: vibrant teal (`#0097B2`) and deep teal (`#124854`) over obsidian slate (`#080E14`).
-  - Added `lucide-react` icon system replacing raw SVGs.
-  - Configured `components.json` and `lib/utils.ts` (`cn()` helper).
-- **Official Brand Identity & Logo Integration**:
-  - Extracted and processed official Byten brand mark and typography from master assets into high-resolution transparent assets: `public/byten-logo.png`, `public/byten-logo-dark.png`, `public/byten-mark.png`, and `public/byten-mark-dark.png`.
-  - Replaced generic placeholder "B" letter boxes with the official Byten logo in the top Navigation Bar (`app/page.tsx`) and Footer (`app/page.tsx`).
-  - Integrated the Byten mark badge into the Hero engineering badge and POS engine status card.
-  - Configured multi-resolution browser tab icons: `app/favicon.ico` and `public/favicon.ico` (16, 32, 48px), `app/icon.png` and `public/icon.png` (512x512), and Apple touch icon `app/apple-icon.png` (180x180).
-  - Configured `metadataBase`, `icons`, `openGraph.images`, and `twitter.images` metadata in `app/layout.tsx`.
-- **Official Homepage Redesign (`app/page.tsx`)**:
-  - Implemented 7-section engineering agency layout adhering to `docs/DESIGN.md` and `docs/PRODUCT.md`.
-  - Showcased 4 core engineering capabilities: Web Platforms, Mobile Applications, Smart POS & Retail Systems, and Enterprise APIs.
-  - Added specialized Point of Sale (POS) architecture deep dive detailing offline transaction queues, inventory sync, and hardware driver support.
-  - Built accessible, interactive project inquiry form with scope selection and instant validation.
-  - Switched font stack to modern geometric `DM Sans` (`app/layout.tsx`).
-- **Tailwind CSS v4 Design Token Architecture (`app/globals.css`)**:
-  - Integrated Tailwind v4 base styles with dark obsidian palette (`#090D16`), elevation panels (`#111726`), electric blue (`#2563EB`), and high-contrast text.
+- **Load-Bearing visual system** (`docs/DESIGN.md`): concrete/ink/teal/vermilion
+  palette, Archivo variable display, Hanken Grotesk reading face, Geist Mono
+  measurements, 12-column editorial grid, hairline rules and one committed teal
+  service plate.
+- **New information architecture**:
+  - `/` — hero, conveyor, selected work, capabilities, process, studio, contact.
+  - `/work` — representative engagement index.
+  - `/work/counter`, `/work/atlas`, `/work/relay` — full case studies with
+    brief, structure, outcome, tradeoff, stack, disclosure and contact CTA.
+  - `/studio` — company record, working principles and boundaries.
+  - `/contact` — project brief with honest email behaviour.
+  - Styled `404`.
+- **Interactive load rig** (`components/load-rig.tsx`): authored SVG portal
+  frame with four service labels, pointer-driven live load, deflection readout,
+  dimension lines and a draw-in animation.
+- **Authored schematic system** (`components/diagrams.tsx`,
+  `components/work-preview.tsx`): web, mobile, retail and backend diagrams, plus
+  three case-study UI schematics. No stock icons or fake dashboards.
+- **Work index interaction**: colour-inverting rows, cursor-following project
+  preview rendered through a React portal, keyboard focus preview, and inline
+  mobile schematics.
+- **Native mobile menu** (`<dialog>`): focus trapping, Escape, backdrop close,
+  scroll lock, indexed links, CTA, direct contact and theme toggle.
+- **Theme-aware inverted bands**: conveyor, process and contact invert with the
+  theme; dark mode is a designed paper inversion, not a filter.
+- **CSS scroll-driven reveals** and process-line fill, with visible-by-default
+  fallbacks and a full reduced-motion path.
+- **SEO and sharing**: metadata template, canonical URLs, Open Graph/Twitter
+  tags, JSON-LD Organization, `sitemap.xml`, `robots.txt`, and a 1200×630
+  font-accurate `public/og.png` captured from the built hero.
+- **Live IST clock**, skip link, scroll progress rule, custom focus/selection/
+  scrollbar styling, and `color-scheme`/theme-color metadata.
+- **Content disclosure model**: all cases carry the canonical line
+  “Representative engagement: synthetic brief, no client name, no audited
+  results.” The work page no longer claims production systems.
+
+### Changed
+- Replaced fake SLA/metric strips, terminal status cards, generic icon-card
+  grids, gradient/glass decoration and "production-grade" eyebrow copy with
+  specific studio copy.
+- Contact form now clearly opens a populated email draft; the button says
+  “Send brief by email” and the helper sits above the action.
+- Case pages now show a visible “Brief constraints, not measured results”
+  caption, a “What we traded” section for each engagement, and a
+  “Have a similar constraint? Send the brief” contact path before the next
+  system.
+- Case-study plates now stay in the teal family (`--plate`, `--plate-deep`,
+  teal-ink); vermilion remains a live-load and selected-control accent rather
+  than a full field.
+- Work page now describes representative engagements, not systems in
+  production.
 
 ### Removed
-- Removed 130 lines of bespoke glassmorphism CSS, decorative text gradients, and emoji placeholders flagged as AI anti-patterns by Impeccable.
+- Old shadcn/ui primitives (`Badge`, `Button`, `Card`, `Input`, `Separator`,
+  `Textarea`) and the `components/ui` folder.
+- Unused dependencies: `@radix-ui/react-slot`, `class-variance-authority`,
+  `clsx`, `lucide-react`, `tailwind-merge`, `tw-animate-css`.
+- Template SVG assets (`file.svg`, `globe.svg`, `next.svg`, `vercel.svg`,
+  `window.svg`).
+- `lib/utils.ts` (no longer needed after the dependency prune).
+- Unused CSS utilities (`.display-tight`, `.h3`, `.draw-line`, `.hero__field`).
+
+### Fixed
+- Hover preview no longer breaks under a transformed page-transition ancestor;
+  it renders in a body portal.
+- Cross-theme contrast: darkened `--subtle`/`--primary`, set plate text to pure
+  white, added a theme-aware `--band-accent` for inverted bands, scoped
+  `--focus` on dark paper bands, raised the 55% band labels, and fixed the
+  ghost button so it remains visible on a light band in dark mode.
+- All authored SVG diagram groups now set `fill="none"`, removing black wedges
+  and caption overlaps caused by open paths inheriting the default fill.
+- Header logo now respects its 132px width (the mobile menu was off-screen at
+  320px before); the hero H1 scales down below 900px instead of clipping.
+- The hamburger is hidden on desktop; the desktop header has one navigation
+  system again.
+- Field focus rings are visible again; form validation now marks every invalid
+  field with `aria-invalid`, links it to a status summary, and focuses the first
+  error instead of relying on a browser bubble.
+- The conveyor has a keyboard-operable Pause/Play control; the theme toggle
+  exposes `aria-pressed`; the load rig is a keyboard/touch slider with a visible
+  readout; the studio statement is an `h2`; the skip target can take focus;
+  Back to top targets the header.
+- Mobile work note no longer squeezes the contact link into a narrow column.
+- Mobile menu email no longer breaks mid-word.
+- 404 no longer uses a kicker above the heading.
+- The social card now contains the full load rig and readout strip instead of
+  cropping the base of the drawing.
+
+### Documentation
+- Replaced `docs/DESIGN.md` with the shipped Load-Bearing system.
+- Added proof/claims rules and the engagement model to `docs/PRODUCT.md`.
+- Added ADR 0004 (supersedes 0002/0003), the implementation plan, and updated
+  `PROJECT_STATE.md`/`README.md`.
+
+---
+
+## [0.1.1] - 2026-10-31
+
+### Added
+- Official Byten logo assets and favicons.
+- shadcn/ui primitives themed to the logo palette.
+- Pure-white light mode, `next-themes` toggle, and a dark obsidian homepage.
+- DM Sans typography, metric strips and an interactive inquiry form.
+- Earlier engineering/POS copy and metadata.
+
+### Removed
+- Template glassmorphism, decorative text gradients and emoji placeholders.
 
 ---
 
 ## [0.1.0] - 2026-10-25
 
 ### Added
-- **AI Agent & Skillset Infrastructure**:
-  - **Impeccable** (`pbakaus/impeccable`): UI craft, anti-pattern detection, typography, and contrast enforcement.
-  - **Intent** (`ghaida/intent`): 18 UX strategy skills including `/strategize`, `/wireframe`, `/articulate`, `/evaluate`, and `/fortify`.
-  - **Ponytail** (`dietrichgebert/ponytail`): 6 code discipline skills enforcing the 7-step Necessity Ladder, debt tracking, and review workflows.
-  - **Graphify** (`graphify-labs/graphify`): Codebase AST knowledge graph engine (`graph.html`, `GRAPH_REPORT.md`, `graph.json`).
-- **Product & Design System Context**:
-  - `docs/PRODUCT.md`: Byten company overview, core service offerings, brand voice, and audience.
-  - `docs/DESIGN.md`: Obsidian dark theme tokens, typographic scale, component standards, and anti-pattern checklists.
-- **Change Tracking System**:
-  - `CHANGELOG.md`: Standard Keep-a-Changelog release log.
-  - `PROJECT_STATE.md`: Living status ledger tracking roadmap, current features, and technical debt.
-  - `docs/adr/`: Architectural Decision Records directory with `0001-agent-skillset-and-change-tracking.md`.
-  - `.agents/skills/track-changes/`: Dedicated change-tracking skill for coding agents.
-- **Agent Governance Rules**:
-  - `.agents/rules/ui-craft.md`: Rules preventing AI slop and enforcing Impeccable & Intent guidelines.
-  - `.agents/rules/code-discipline.md`: Rules enforcing Ponytail minimalism and zero over-engineering.
-  - `.agents/rules/change-tracking.md`: Rules enforcing audit updates on meaningful code changes.
-  - `.agents/rules/graphify.md`: Graphify AST graph navigation rules.
+- **Agent and skillset infrastructure**: Impeccable, Intent, Ponytail, Graphify
+  and track-changes skills.
+- **Product and design context**: `docs/PRODUCT.md`, `docs/DESIGN.md`.
+- **Change tracking**: this changelog, `PROJECT_STATE.md`, ADRs and
+  `.agents/rules/`.
+- **Governance rules** for UI craft, code discipline, change tracking and the
+  knowledge graph.

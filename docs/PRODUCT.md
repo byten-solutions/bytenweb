@@ -28,3 +28,30 @@
 - **Founders & CTOs**: Seeking dedicated engineering teams capable of architecting and shipping production-grade platforms quickly.
 - **Retail & Enterprise Business Owners**: In need of modern, unified POS systems, digital payments, and inventory management.
 - **Product Leaders**: Looking for dependable frontends, robust APIs, and performant user experiences.
+
+---
+
+## 5. Proof, Claims & Disclosure
+
+- The three published case studies are **representative engagements**. They are
+  synthetic briefs, not named client projects, and every presentation of them
+  carries the same disclosure: `Representative engagement: synthetic brief, no
+  client name, no audited results.`
+- Do not invent client logos, named clients, testimonials, awards, uptime
+  guarantees, throughput benchmarks, or audited outcomes.
+- Numbers on a case page describe the brief or a target. They are never
+  presented as measured results.
+- Every case names a tradeoff. A studio that only shows what worked is not
+  credible.
+- The contact form opens a populated email draft. It does not silently submit
+  to a backend and must never show a fake success state.
+- The site does not use analytics or tracking cookies. Do not add them without
+  a privacy decision and visible disclosure.
+
+## 6. Engagement Model
+
+- **Project**: a scoped build with a written system brief, staged delivery, and
+  handover.
+- **Embedded team**: Byten engineers working inside an existing product team.
+- The same people who scope the work build it; the handover includes docs, a
+  runbook, and a walkthrough with the team that will own the system.
