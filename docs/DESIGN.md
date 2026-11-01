@@ -95,9 +95,14 @@ or in the margin, never as a small line introducing a heading.
 - Work rows are six-column index rows on desktop, three-column rows with an
   inline schematic on mobile.
 - The hero is a two-zone composition: copy on concrete, a teal service-frame
-  plate that bleeds to the right edge. The hero plate is the committed field;
-  case-study plates stay in the same teal family (`--plate`, `--plate-deep`,
-  teal-ink) so vermilion remains a live-load accent, never a field.
+  plate that bleeds to the right edge. The plate stage height is capped at
+  `clamp(22rem, 56vh, 34rem)` so the hero fits a 1080p Chrome content viewport;
+  the hero plate is the committed field. Case-study plates stay in the same
+  teal family (`--plate`, `--plate-deep`, teal-ink) so vermilion remains a
+  live-load accent, never a field.
+- Below 880px of viewport height the hero title and padding tighten; below
+  700px the secondary spec strip is removed and the hero is allowed to
+  content-size. The full hero must be visible without clipping at 1920×830.
 - Breakpoints: 1100, 900, 560. The 900 breakpoint is the layout change: nav
   collapses to the native dialog, hero stacks, work preview becomes inline,
   capability grid becomes one column, process becomes vertical.

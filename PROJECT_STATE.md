@@ -120,6 +120,11 @@ No unused `components/ui` primitives remain.
   theme row visible, no horizontal overflow, native Escape/focus trap intact.
 - Wide screens verified at 1920×1080 and 2560×1440: header lockup 108px, footer
   lockup 128px, hero title clears the plate, no horizontal overflow.
+- Hero fits the 1080p Chrome content viewport (1920×830): hero bottom 740px,
+  spec strip at 715px, full CTAs and plate visible. Also checked 1440×800 and
+  1366×630; the short-height rule hides the secondary spec strip at ≤700px.
+- Next dev badge disabled via `devIndicators: false`; it no longer overlaps the
+  lower-left content in dev.
 - Form validation verified: `aria-invalid` on every invalid field, first field
   focused, error summary in the live region.
 - Diagram and social-card review corrections applied: `fill="none"` on diagram

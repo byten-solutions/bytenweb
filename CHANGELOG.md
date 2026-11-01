@@ -115,6 +115,11 @@ replaced rather than polished.
 - 404 no longer uses a kicker above the heading.
 - The social card now contains the full load rig and readout strip instead of
   cropping the base of the drawing.
+- The hero now fits a 1080p Chrome content viewport: tighter vertical padding,
+  a capped load-rig stage height, and short-height rules at 880px and 700px.
+  At the 1920×830 content viewport the hero ends at 740px, with the spec strip
+  and conveyor visible. The dev-only Next badge is disabled in `next.config.ts`
+  so it cannot overlap the page.
 
 ### Documentation
 - Replaced `docs/DESIGN.md` with the shipped Load-Bearing system.
