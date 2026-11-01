@@ -108,8 +108,10 @@ or in the margin, never as a small line introducing a heading.
 Solid background, sticky, hairline when scrolled. Logo is the supplied raster
 lockup. Scroll progress is a 2px vermilion rule at the bottom edge. Theme
 toggle and primary CTA sit right. Mobile: a native `<dialog>` menu with large
-indexed links, the CTA, direct contact, and the theme toggle. Native dialog
-provides the focus trap and Escape behaviour.
+indexed links, the CTA, direct contact, and the theme toggle. The dialog fills
+the dynamic viewport (with the native `max-height` reset) and scrolls only if
+its content exceeds it. Native dialog provides the focus trap and Escape
+behaviour.
 
 ### Buttons
 Square-ish (2px radius), uppercase Archivo, 13px, 0.055em tracking, 48px

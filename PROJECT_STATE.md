@@ -116,6 +116,8 @@ No unused `components/ui` primitives remain.
   live text readout).
 - Mobile header verified at 320px: 132px logo, full 44px menu button, no
   horizontal overflow; H1 lines fit without clipping.
+- Mobile menu verified at 320×800 and 390×844: dialog fills the viewport,
+  theme row visible, no horizontal overflow, native Escape/focus trap intact.
 - Form validation verified: `aria-invalid` on every invalid field, first field
   focused, error summary in the live region.
 - Diagram and social-card review corrections applied: `fill="none"` on diagram

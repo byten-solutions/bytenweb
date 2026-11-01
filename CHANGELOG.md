@@ -105,6 +105,9 @@ replaced rather than polished.
   Back to top targets the header.
 - Mobile work note no longer squeezes the contact link into a narrow column.
 - Mobile menu email no longer breaks mid-word.
+- The mobile menu now fills the dynamic viewport with its native
+  `max-height` reset, so the theme row and contact block are not cut off at
+  390×844 or 320×800. Footer links gained larger touch targets.
 - 404 no longer uses a kicker above the heading.
 - The social card now contains the full load rig and readout strip instead of
   cropping the base of the drawing.

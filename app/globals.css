@@ -500,7 +500,8 @@
     inset: 0;
     width: 100%;
     max-width: none;
-    height: 100dvh;
+    height: 100%;
+    max-height: none;
     margin: 0;
     border: 0;
     padding: 0;
@@ -1802,6 +1803,7 @@
   .footer__nav a,
   .footer__contact a {
     width: fit-content;
+    padding-block: 0.3rem;
     font-size: 0.9375rem;
     line-height: 1.5;
     color: var(--muted-foreground);
@@ -1833,6 +1835,10 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--subtle);
+  }
+
+  .footer__bottom a {
+    padding-block: 0.25rem;
   }
 
   .footer__bottom a:hover {
