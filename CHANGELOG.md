@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Clean Route Architecture (Removed `#` Hash Fragments)**:
+  - Converted `/#capabilities` and `/#process` anchor jumps into clean dedicated top-level routes: [`/capabilities`](/capabilities) and [`/process`](/process).
+  - Updated primary navigation, mobile drawer menu, footer links, and XML sitemap to reference clean URLs without `#` hash fragments.
 - **Production-Grade Micro-Animations & Universal Scroll-Reveal**:
   - Implemented client-side `ScrollReveal` component using native `IntersectionObserver` with smooth Apple/Stripe-calibrated cubic-bezier easing (`cubic-bezier(0.16, 1, 0.3, 1)`), unlocking universal scroll-triggered entrances across Safari, iOS, Firefox, and Chrome without depending solely on Chromium-only CSS scroll timelines.
   - Added live telemetry status beacon to hero specifications with pulsing emerald radar wave (`beacon-pulse`) for "Open for select projects".
