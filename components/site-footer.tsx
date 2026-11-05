@@ -31,6 +31,14 @@ export function SiteFooter() {
           <div className="footer__contact">
             <a href={`mailto:${site.email}`}>{site.email}</a>
             <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
+            <a
+              href={site.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Byten on Instagram (@byten.in)"
+            >
+              Instagram / {site.instagramHandle}
+            </a>
             <a href={site.url} target="_blank" rel="noreferrer">
               {site.domain}
             </a>

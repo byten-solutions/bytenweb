@@ -6,6 +6,8 @@ export const site = {
   phone: "+91 9633581368",
   phoneHref: "+919633581368",
   domain: "www.byten.in",
+  instagram: "https://www.instagram.com/byten.in",
+  instagramHandle: "@byten.in",
   description:
     "Byten is a digital engineering company building enterprise platforms, mobile apps, client websites, and service integrations that have to keep working.",
   tagline: "Software that holds.",
@@ -27,4 +29,10 @@ export const site = {
   ],
 } as const;
 
-export const socialLinks: { label: string; href: string }[] = [];
+export const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/byten.in",
+    handle: "@byten.in",
+  },
+];

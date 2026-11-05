@@ -153,7 +153,7 @@ const jsonLd = {
         email: site.email,
         availableLanguage: ["English", "Malayalam"],
       },
-      sameAs: [site.url],
+      sameAs: [site.url, site.instagram],
       knowsAbout: [
         "Enterprise ERP Software Development",
         "Stone Crusher & Mining Operating Systems (byteSTRATA)",

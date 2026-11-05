@@ -26,6 +26,17 @@ export function ContactSection() {
                 <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
               </div>
               <div className="contact__detail">
+                <span>Instagram</span>
+                <a
+                  href={site.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Byten on Instagram (@byten.in)"
+                >
+                  {site.instagramHandle}
+                </a>
+              </div>
+              <div className="contact__detail">
                 <span>Studio</span>
                 <span>India / worldwide</span>
               </div>

@@ -40,6 +40,7 @@ const record = [
   { term: "Base", detail: "India / working worldwide" },
   { term: "Engagements", detail: "Project or embedded team" },
   { term: "Contact", detail: site.email },
+  { term: "Instagram", detail: site.instagramHandle },
   { term: "Status", detail: "Open for select projects" },
 ];
 

@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Social Integration & Instagram Handle**:
+  - Added official Instagram handle [`@byten.in`](https://www.instagram.com/byten.in) to global site configuration (`lib/site.ts`), footer contact links, contact section, studio company record, and JSON-LD `sameAs` schema.
 - **Clean Route Architecture (Removed `#` Hash Fragments)**:
   - Converted `/#capabilities` and `/#process` anchor jumps into clean dedicated top-level routes: [`/capabilities`](/capabilities) and [`/process`](/process).
   - Updated primary navigation, mobile drawer menu, footer links, and XML sitemap to reference clean URLs without `#` hash fragments.
