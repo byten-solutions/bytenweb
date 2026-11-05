@@ -143,8 +143,11 @@ const jsonLd = {
       description: site.description,
       address: {
         "@type": "PostalAddress",
+        streetAddress: site.address.street,
+        addressLocality: site.address.city,
+        addressRegion: site.address.state,
+        postalCode: site.address.postalCode,
         addressCountry: "IN",
-        addressRegion: "Kerala",
       },
       contactPoint: {
         "@type": "ContactPoint",

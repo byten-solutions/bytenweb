@@ -57,7 +57,7 @@ export default function Home() {
               </div>
               <div>
                 <dt className="mono-label">Base</dt>
-                <dd>India / worldwide</dd>
+                <dd>Kerala, India / worldwide</dd>
               </div>
               <div>
                 <dt className="mono-label">Status</dt>

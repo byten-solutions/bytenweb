@@ -37,8 +37,8 @@ export function ContactSection() {
                 </a>
               </div>
               <div className="contact__detail">
-                <span>Studio</span>
-                <span>India / worldwide</span>
+                <span>Office</span>
+                <span>{site.address.full}</span>
               </div>
               <div className="contact__detail">
                 <span>Local time</span>

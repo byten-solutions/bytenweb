@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Office Location Configuration**:
+  - Added primary studio & office location (`Ozhukur, Morayur, Malappuram, Kerala — 673642, India`) across global site config (`lib/site.ts`), Schema.org `PostalAddress` structured data, contact section, footer, and studio company record.
 - **Social Integration & Instagram Handle**:
   - Added official Instagram handle [`@byten.in`](https://www.instagram.com/byten.in) to global site configuration (`lib/site.ts`), footer contact links, contact section, studio company record, and JSON-LD `sameAs` schema.
 - **Clean Route Architecture (Removed `#` Hash Fragments)**:

@@ -11,7 +11,16 @@ export const site = {
   description:
     "Byten is a digital engineering company building enterprise platforms, mobile apps, client websites, and service integrations that have to keep working.",
   tagline: "Software that holds.",
-  location: "India",
+  location: "Ozhukur, Morayur, Malappuram, Kerala, India — 673642",
+  address: {
+    street: "Ozhukur, Morayur",
+    city: "Malappuram",
+    state: "Kerala",
+    postalCode: "673642",
+    country: "India",
+    full: "Ozhukur, Morayur, Malappuram, Kerala — 673642, India",
+    display: "Ozhukur, Malappuram, Kerala",
+  },
   timeZone: "Asia/Kolkata",
   nav: [
     { label: "Work", href: "/work" },

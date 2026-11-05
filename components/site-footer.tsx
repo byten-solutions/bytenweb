@@ -51,7 +51,7 @@ export function SiteFooter() {
             &copy; {new Date().getFullYear()} Byten. All rights reserved.
           </span>
           <span className="footer__status">Open for select projects</span>
-          <span>India / working worldwide</span>
+          <span>{site.address.display} / worldwide</span>
           <a href="#top">Back to top</a>
         </div>
 

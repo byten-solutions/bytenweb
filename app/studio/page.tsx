@@ -37,7 +37,8 @@ const principles = [
 const record = [
   { term: "Reply", detail: "Direct from the team" },
   { term: "Disciplines", detail: "ERP / Mobile / Web / Services" },
-  { term: "Base", detail: "India / working worldwide" },
+  { term: "Office", detail: site.address.full },
+  { term: "Base", detail: `${site.address.display} / working worldwide` },
   { term: "Engagements", detail: "Project or embedded team" },
   { term: "Contact", detail: site.email },
   { term: "Instagram", detail: site.instagramHandle },
