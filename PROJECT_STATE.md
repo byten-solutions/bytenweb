@@ -24,11 +24,16 @@
 
 | Route | Purpose | State |
 | :--- | :--- | :--- |
-| `/` | Hero + load rig, conveyor, work, capabilities, process, studio, contact | ✅ |
-| `/work` | Representative engagement index with interactive previews | ✅ |
-| `/work/counter` | Offline-first retail POS case study | ✅ |
-| `/work/atlas` | B2B commerce case study | ✅ |
-| `/work/relay` | Field operations mobile case study | ✅ |
+| `/` | Hero + realigned load rig, conveyor, work (mobile-capped at 3 with inline toggle), real capabilities (ERP, Mobile, Websites, Services), process, studio, contact | ✅ |
+| `/work` | Complete 8-project production engagement directory with interactive previews | ✅ |
+| `/work/bytestrata` | Enterprise quarry, crusher & mining ERP case study | ✅ |
+| `/work/edubyte` | School management, fee engine & WhatsApp integration case study | ✅ |
+| `/work/byteflow` | Real-time Kanban, immutable event ledger & delivery platform case study | ✅ |
+| `/work/bytepos` | Flutter tablet & mobile restaurant POS (Android & iOS) case study | ✅ |
+| `/work/byteballot` | Indian EVM & VVPAT simulator civic education platform case study | ✅ |
+| `/work/cuplana` | Food consulting for modern restaurant brands website case study | ✅ |
+| `/work/kidscove` | School of Excellence early education web portal case study | ✅ |
+| `/work/skyra` | Global education & HR career consultancy portal case study | ✅ |
 | `/studio` | Company record, principles, boundaries | ✅ |
 | `/contact` | Three-step expectation + project brief | ✅ |
 | `/not-found` | Styled 404 | ✅ |

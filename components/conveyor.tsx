@@ -3,12 +3,14 @@
 import { useState } from "react";
 
 const items = [
-  "Web platforms",
+  "Enterprise ERP",
   "Mobile apps",
-  "Retail systems",
-  "Enterprise backends",
-  "Offline first",
-  "Design systems",
+  "Client websites",
+  "School management",
+  "Restaurant POS",
+  "WhatsApp integration",
+  "Voting simulators",
+  "Mining & quarry ops",
 ];
 
 function Group() {

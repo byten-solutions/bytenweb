@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "@/components/icons";
@@ -57,7 +58,7 @@ export default async function ProjectPage({ params }: Props) {
           </div>
 
           <div className="case-hero__meta">
-            <span className="mono-label">Representative engagement</span>
+            <span className="mono-label">Client production deployment</span>
             <span className="mono-label">Context / {project.client}</span>
             <span className="mono-label">{project.sector}</span>
             <span className="mono-label">{project.year}</span>
@@ -101,7 +102,7 @@ export default async function ProjectPage({ params }: Props) {
               <h2 id="the-load">The load</h2>
               <p>{project.brief}</p>
               <p className="mono-label" style={{ marginTop: "1.5rem" }}>
-                Brief constraints, not measured results
+                Production specifications &amp; constraints
               </p>
               <div className="case-loads" aria-label="Engagement constraints">
                 {project.loads.map((load) => (
@@ -130,6 +131,41 @@ export default async function ProjectPage({ params }: Props) {
                 ))}
               </ol>
             </section>
+
+            {project.screenshots && project.screenshots.length > 0 && (
+              <section className="case-section" aria-labelledby="system-interfaces">
+                <h2 id="system-interfaces">System interfaces</h2>
+                <p>
+                  Production interface captures and workflow modules from the active{" "}
+                  {project.name} deployment.
+                </p>
+                <div className="case-screenshots">
+                  {project.screenshots.map((screen, idx) => (
+                    <figure key={screen.src} className="case-screenshot-item">
+                      <div className="case-screenshot-frame">
+                        <div className="case-screenshot-header">
+                          <span className="mono-label">
+                            FIG. {String(idx + 1).padStart(2, "0")} / {screen.label}
+                          </span>
+                          <span className="mono-label">LIVE DEPLOYMENT</span>
+                        </div>
+                        <Image
+                          src={screen.src}
+                          alt={screen.label}
+                          width={1400}
+                          height={875}
+                          className="case-screenshot-img"
+                          loading="lazy"
+                        />
+                      </div>
+                      <figcaption className="mono-label case-screenshot-caption">
+                        {screen.caption}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            )}
 
             <section className="case-section" aria-labelledby="what-holds">
               <h2 id="what-holds">What holds</h2>

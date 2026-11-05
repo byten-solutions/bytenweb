@@ -1080,9 +1080,25 @@
     color: var(--muted-foreground);
   }
 
-  .work-preview svg {
+  .work-preview svg,
+  .work-preview img {
     width: 100%;
     height: auto;
+    display: block;
+  }
+
+  .work-preview-media {
+    width: 100%;
+    position: relative;
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .work-preview-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
   }
 
   .work-note {
@@ -1098,6 +1114,10 @@
     font-size: 0.8125rem;
     line-height: 1.5;
     color: var(--subtle);
+  }
+
+  .work-mobile-actions {
+    display: none;
   }
 
   /* ---------- capabilities ---------- */
@@ -1954,9 +1974,11 @@
     overflow: hidden;
   }
 
-  .case-art svg {
+  .case-art svg,
+  .case-art img {
     width: 100%;
     height: auto;
+    display: block;
   }
 
   .case-body {
@@ -2101,6 +2123,52 @@
     line-height: 1.5;
     color: var(--subtle);
     max-width: 56ch;
+  }
+
+  .case-screenshots {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 4vw, 3.5rem);
+    margin-top: 1.75rem;
+  }
+
+  .case-screenshot-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .case-screenshot-frame {
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .case-screenshot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.65rem 1rem;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--line);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+  }
+
+  .case-screenshot-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background: #000;
+  }
+
+  .case-screenshot-caption {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--subtle);
+    padding-left: 0.25rem;
   }
 
   .case-cta {
@@ -2448,9 +2516,11 @@
       overflow: hidden;
     }
 
-    .work-row__mobile-preview svg {
+    .work-row__mobile-preview svg,
+    .work-row__mobile-preview img {
       width: 100%;
       height: auto;
+      display: block;
     }
 
     .work-row {
@@ -2460,6 +2530,26 @@
     .work-row:hover,
     .work-row:focus-visible {
       padding-inline: 0;
+    }
+
+    .work-row--hidden-mobile {
+      display: none !important;
+    }
+
+    .work-mobile-actions {
+      display: flex;
+      justify-content: center;
+      padding-top: 1.5rem;
+    }
+
+    .work-mobile-toggle-btn {
+      width: 100%;
+      min-height: 2.875rem;
+      justify-content: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      border-color: var(--line-strong);
+      background: var(--surface);
     }
 
     .capability-grid {

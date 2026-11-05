@@ -9,8 +9,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-- Nothing yet.
+### Added
+- **Site-Wide Alignment to Byten Real Systems & Service Offerings**:
+  - Replaced generic schematic labels on the interactive hero **Load Rig** with Byten's four real operating pillars: `ERP`, `MOBILE`, `WEB`, `SERVICES`.
+  - Overhauled **Capability Grid** (`What we build`) to reflect actual client engagements:
+    1. *Enterprise ERP & SaaS* (`byteSTRATA`, `EduByte`, `byteFlow`)
+    2. *Mobile apps* (`bytePOS`, Flutter, offline-first)
+    3. *Websites & client portals* (`Cuplana`, `KidsCove`, `Skyra`)
+    4. *Services & integrations* (WhatsApp API, payment gateways, `byteBallot`)
+  - Updated conveyor disciplines ticker tape, hero value proposition copy, disciplines list, and studio philosophy to center on enterprise platforms, mobile applications, client websites, and service-sector integrations.
+- **Mobile-Only 3-Project Selected Work with Inline Toggle**:
+  - In mobile view on the Home page, the Selected Work list shows exactly 3 projects (`byteSTRATA`, `EduByte`, `byteFlow`) to keep the page clean and concise.
+  - Added a clean mobile-only `See all projects` button that expands and renders all 8 projects inline right on that page when tapped (with smooth `Show less` collapse).
+  - Desktop view remains completely unchanged (displaying all 8 table rows with hover previews, and no mobile toggle button).
+- **Cuplana case study** (`/work/cuplana`): Food consulting & culinary operations platform for modern restaurant brands, menu engineering, cost control, and consultation booking.
+- **KidsCove case study** (`/work/kidscove`): School of Excellence early education web portal, admissions booking (2027-28), curriculum storytelling, and WhatsApp helpline integration in Ozhukur, Kerala.
+- **Skyra case study** (`/work/skyra`): Global education & HR career consultancy portal, international study abroad lead capture, and overseas corporate placements.
+- **100% Real Client Portfolio Transition**: Replaced synthetic placeholder case studies (`counter`, `atlas`, `relay`) with authentic client websites and enterprise platforms.
+- **byteBallot case study** (`/work/byteballot`): Realistic miniature simulation of the Indian Electronic Voting Machine (EVM) and VVPAT printer educating citizens and first-time voters on the complete ballot procedure with 148,000+ anonymous simulated votes.
+- **bytePOS case study** (`/work/bytepos`): Cross-platform Flutter tablet and mobile application (Android & iOS) for restaurants, instant ESC/POS kitchen order ticket (KOT) printing, table management, live raw material consumption, and cash drawer reconciliation. Cropped OS status and navigation bars to isolate the pure application interface.
+- **byteFlow case study** (`/work/byteflow`): Real-time delivery orchestration Kanban platform featuring immutable mutation histories, multi-lane workflows, role governance, and sub-100ms WebSocket synchronization.
+- **EduByte case study** (`/work/edubyte`): Modern school management, individualized student fee ledgers, automated WhatsApp receipt messaging, per-vehicle transport route profitability, and institutional double-entry accounting.
+- **byteSTRATA case study** (`/work/bytestrata`): Enterprise quarry, stone crusher & mining ERP platform unifying weighbridge scale telemetry, heavy fleet logistics, double-entry commercial accounts, payroll slips, and executive DPR/P&L analytics.
+- **Original dashboard interface display**: Replaced vector schematic in both the case-art hero section (`/work/bytestrata`) and the work index hover/mobile preview card (`WorkIndex`) with the original high-resolution live quarry workspace dashboard.
+- **Production screenshot gallery** (`public/work/bytestrata/`): 5 high-resolution production interface captures embedded with architectural figure headers (`FIG. 01` to `FIG. 05`) and descriptive technical captions.
+- Expanded Selected Work on home (`/`) and work index (`/work`) to feature byteSTRATA as the lead project.
 
 ---
 

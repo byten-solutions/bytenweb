@@ -294,6 +294,110 @@ function RelayPreview() {
   );
 }
 
+function ByteStrataPreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/bytestrata/03-plant-workspace.jpg"
+        alt="byteSTRATA / Live Quarry & Mining ERP Dashboard"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+function EduBytePreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/edubyte/02-workspace-dashboard.jpg"
+        alt="EduByte / School Management & Financial Dashboard"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+function ByteFlowPreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/byteflow/02-kanban-board.png"
+        alt="byteFlow / Real-Time Delivery & Kanban Board"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+function BytePosPreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/bytepos/01-pos-terminal-v2.jpg"
+        alt="bytePOS / Restaurant Touchscreen POS & KOT Terminal"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+function ByteBallotPreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/byteballot/02-evm-vvpat-simulator.jpg"
+        alt="byteBallot / Interactive EVM & VVPAT Voting Simulator"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+function CuplanaPreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/cuplana/01-landing.jpg"
+        alt="Cuplana / Food Consulting for Modern Restaurant Brands"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+function KidsCovePreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/kidscove/01-landing.jpg"
+        alt="KidsCove / School of Excellence"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+function SkyraPreview() {
+  return (
+    <div className="work-preview-media">
+      <img
+        src="/work/skyra/01-landing.jpg"
+        alt="Skyra / Global Education & Career Consultancy"
+        className="work-preview-img"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
 export function WorkPreview({
   project,
   className,
@@ -303,12 +407,22 @@ export function WorkPreview({
 }) {
   return (
     <div className={className}>
-      {project.preview === "counter" ? (
-        <CounterPreview />
-      ) : project.preview === "atlas" ? (
-        <AtlasPreview />
+      {project.preview === "bytestrata" ? (
+        <ByteStrataPreview />
+      ) : project.preview === "edubyte" ? (
+        <EduBytePreview />
+      ) : project.preview === "byteflow" ? (
+        <ByteFlowPreview />
+      ) : project.preview === "bytepos" ? (
+        <BytePosPreview />
+      ) : project.preview === "byteballot" ? (
+        <ByteBallotPreview />
+      ) : project.preview === "cuplana" ? (
+        <CuplanaPreview />
+      ) : project.preview === "kidscove" ? (
+        <KidsCovePreview />
       ) : (
-        <RelayPreview />
+        <SkyraPreview />
       )}
     </div>
   );

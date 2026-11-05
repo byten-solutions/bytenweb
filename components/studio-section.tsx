@@ -36,7 +36,7 @@ export function StudioSection() {
           <div className="studio__copy reveal reveal-late">
             <p className="body-copy">
               Byten is a digital engineering company. We work with founders,
-              product leaders, and retail operators who need a system built
+              product leaders, and business operators who need a system built
               properly the first time.
             </p>
             <p className="body-copy">

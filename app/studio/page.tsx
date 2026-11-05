@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Studio",
   description:
-    "Byten is a digital engineering company working with founders, product leaders, and retail operators on systems built to be maintained.",
+    "Byten is a digital engineering company working with founders, product leaders, and business operators on enterprise platforms, mobile apps, and client websites built to last.",
   alternates: { canonical: "/studio" },
 };
 
@@ -36,7 +36,7 @@ const principles = [
 
 const record = [
   { term: "Reply", detail: "Direct from the team" },
-  { term: "Disciplines", detail: "Web / Mobile / Retail / Enterprise" },
+  { term: "Disciplines", detail: "ERP / Mobile / Web / Services" },
   { term: "Base", detail: "India / working worldwide" },
   { term: "Engagements", detail: "Project or embedded team" },
   { term: "Contact", detail: site.email },
@@ -51,13 +51,14 @@ export default function StudioPage() {
           <div className="section-head">
             <h1 className="h2">A digital engineering company.</h1>
             <p className="lede">
-              We build software that has to keep working: platforms, mobile
-              tools, and retail systems. The work is the argument.
+              We build software that has to keep working: enterprise platforms,
+              mobile apps, client websites, and service integrations. The work
+              is the argument.
             </p>
           </div>
           <div className="page-hero__meta">
             <span className="mono-label">Byten / India</span>
-            <span className="mono-label">Web / Mobile / Retail / Enterprise</span>
+            <span className="mono-label">ERP / Mobile / Web / Services</span>
             <span className="mono-label">Project or embedded</span>
           </div>
         </div>
@@ -72,7 +73,7 @@ export default function StudioPage() {
             </h2>
             <div className="studio__copy reveal reveal-late">
               <p className="body-copy">
-                Byten works with founders, product leaders, and retail
+                Byten works with founders, product leaders, and business
                 operators who need a system built properly the first time. We
                 take the whole path: the first diagram, the production release,
                 and the handover.

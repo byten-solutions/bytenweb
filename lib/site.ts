@@ -7,7 +7,7 @@ export const site = {
   phoneHref: "+919633581368",
   domain: "www.byten.in",
   description:
-    "Byten is a digital engineering company building web platforms, mobile apps, and retail systems that have to keep working.",
+    "Byten is a digital engineering company building enterprise platforms, mobile apps, client websites, and service integrations that have to keep working.",
   tagline: "Software that holds.",
   location: "India",
   timeZone: "Asia/Kolkata",

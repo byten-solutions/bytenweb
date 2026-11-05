@@ -34,9 +34,9 @@ export default function Home() {
             </h1>
 
             <p className="hero__lede">
-              Byten is a digital engineering company. We design and build web
-              platforms, mobile apps, and retail systems that have to keep
-              working.
+              Byten is a digital engineering company. We design and build
+              enterprise platforms, mobile apps, client websites, and service
+              integrations that have to keep working.
             </p>
 
             <div className="hero__actions">
@@ -53,7 +53,7 @@ export default function Home() {
             <dl className="hero__specs">
               <div>
                 <dt className="mono-label">Disciplines</dt>
-                <dd>Web / Mobile / Retail</dd>
+                <dd>ERP / Mobile / Web / Services</dd>
               </div>
               <div>
                 <dt className="mono-label">Base</dt>
@@ -96,11 +96,12 @@ export default function Home() {
           <div className="section-head">
             <h2 className="h2 reveal">Selected work</h2>
             <p className="lede reveal">
-              Three representative systems, each shaped by a different
-              constraint.
+              Enterprise platforms, mobile apps, and client websites shaped by
+              real operational constraints across mining, education, hospitality,
+              and consulting.
             </p>
           </div>
-          <WorkIndex />
+          <WorkIndex isHome />
         </div>
       </section>
 
@@ -109,8 +110,9 @@ export default function Home() {
           <div className="section-head">
             <h2 className="h2 reveal">What we build</h2>
             <p className="lede reveal">
-              Four disciplines, one system. We take responsibility for the
-              whole path, from the first diagram to the runbook.
+              Five disciplines, one system. From enterprise ERP to client
+              websites, we take responsibility from the first diagram to the
+              runbook.
             </p>
           </div>
           <CapabilityGrid />

@@ -168,10 +168,10 @@ export function LoadRig() {
           fontSize="8"
           letterSpacing="1.6"
         >
-          <text x="86" y="228">WEB</text>
-          <text x="486" y="228">MOBILE</text>
-          <text x="86" y="682">RETAIL</text>
-          <text x="486" y="682">API</text>
+          <text x="86" y="228">ERP</text>
+          <text x="480" y="228">MOBILE</text>
+          <text x="86" y="682">WEB</text>
+          <text x="460" y="682">SERVICES</text>
         </g>
         <g fill="var(--signal-bright)" aria-hidden="true">
           <rect x="86" y="238" width="6" height="6" />
@@ -289,12 +289,12 @@ export function LoadRig() {
           <path d="M110 710h400" />
           <path d="M110 704v12M510 704v12" />
           <text x="310" y="726" textAnchor="middle">
-            SPAN 04 / SERVICE
+            SPAN 05 / SERVICE
           </text>
           <path d="M64 270v370" />
           <path d="M58 270h12M58 640h12" />
           <text x="52" y="458" textAnchor="middle" transform="rotate(-90 52 458)">
-            CAPACITY 03
+            CAPACITY 05
           </text>
         </g>
 

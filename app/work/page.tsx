@@ -7,7 +7,7 @@ import { REPRESENTATIVE_NOTE } from "@/lib/work";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Representative systems built by Byten: offline-first retail POS, B2B commerce, and field operations.",
+    "Production systems built by Byten: enterprise ERP, school management, restaurant POS, Kanban delivery, voting simulators, and client websites.",
   alternates: { canonical: "/work" },
 };
 
@@ -19,14 +19,15 @@ export default function WorkPage() {
           <div className="section-head">
             <h1 className="h2">Work</h1>
             <p className="lede">
-              Representative engagements, each shaped by a different
-              constraint. Retail, commerce, and field operations.
+              Production systems, enterprise ERPs, and client web portals, each shaped by
+              real-world operational constraints. Heavy industry, education, hospitality,
+              and consulting services.
             </p>
           </div>
           <div className="page-hero__meta">
-            <span className="mono-label">03 representative systems</span>
+            <span className="mono-label">Selected production systems</span>
             <span className="mono-label">2025—2026</span>
-            <span className="mono-label">Synthetic briefs</span>
+            <span className="mono-label">Client &amp; representative work</span>
           </div>
         </div>
       </section>
