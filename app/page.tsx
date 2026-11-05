@@ -61,7 +61,10 @@ export default function Home() {
               </div>
               <div>
                 <dt className="mono-label">Status</dt>
-                <dd>Open for select projects</dd>
+                <dd className="hero__status-badge">
+                  <span className="status-beacon" aria-hidden="true" />
+                  <span>Open for select projects</span>
+                </dd>
               </div>
             </dl>
           </div>

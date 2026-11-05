@@ -10,6 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Production-Grade Micro-Animations & Universal Scroll-Reveal**:
+  - Implemented client-side `ScrollReveal` component using native `IntersectionObserver` with smooth Apple/Stripe-calibrated cubic-bezier easing (`cubic-bezier(0.16, 1, 0.3, 1)`), unlocking universal scroll-triggered entrances across Safari, iOS, Firefox, and Chrome without depending solely on Chromium-only CSS scroll timelines.
+  - Added live telemetry status beacon to hero specifications with pulsing emerald radar wave (`beacon-pulse`) for "Open for select projects".
+  - Enhanced micro-interactions on capability cards, tech pills, process stages (`.process__step:hover`), studio principles, and case study screenshot frames (`.case-screenshot-frame:hover` elevation and subtle shadow).
+  - Maintained strict `@media (prefers-reduced-motion: reduce)` compliance.
+- **Comprehensive Enterprise SEO & Rich Structured Data (JSON-LD)**:
+  - Added complete Schema.org `@graph` with `Organization`, `WebSite`, and `OfferCatalog` featuring all 4 Byten service pillars, contact details, geo-location, and verified platform references.
+  - Added dedicated `SoftwareApplication` JSON-LD schemas and dynamic OpenGraph image previews to all 8 case study pages (`/work/[slug]`).
+  - Added extended high-intent meta keywords (quarry ERP, school management fee engine, Flutter restaurant POS, Kerala engineering company).
+  - Enabled Googlebot `max-image-preview: large` robot directives and enhanced XML sitemap priorities (`1.0` homepage, `0.9` work directory, `0.85` case studies).
 - **Site-Wide Alignment to Byten Real Systems & Service Offerings**:
   - Replaced generic schematic labels on the interactive hero **Load Rig** with Byten's four real operating pillars: `ERP`, `MOBILE`, `WEB`, `SERVICES`.
   - Overhauled **Capability Grid** (`What we build`) to reflect actual client engagements:

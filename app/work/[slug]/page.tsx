@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "@/components/icons";
 import { WorkPreview } from "@/components/work-preview";
+import { site } from "@/lib/site";
 import {
   getNextProject,
   getProject,
@@ -24,14 +25,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = getProject(slug);
   if (!project) return { title: "Work" };
 
+  const ogImage = project.screenshots?.[0]?.src
+    ? `${site.url}${project.screenshots[0].src}`
+    : `${site.url}/og.png`;
+
   return {
-    title: project.name,
+    title: `${project.name} — ${project.sector}`,
     description: project.summary,
     alternates: { canonical: `/work/${project.slug}` },
     openGraph: {
-      title: `${project.name} — Byten`,
+      title: `${project.name} — ${project.sector} | Byten`,
       description: project.summary,
       url: `/work/${project.slug}`,
+      siteName: site.name,
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${project.name} production deployment capture`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.name} — Byten`,
+      description: project.summary,
+      images: [ogImage],
     },
   };
 }
@@ -43,8 +63,30 @@ export default async function ProjectPage({ params }: Props) {
 
   const next = getNextProject(project.slug);
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: project.name,
+    headline: `${project.name} — ${project.sector}`,
+    description: project.brief || project.summary,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: project.scope.join(", "),
+    creator: {
+      "@type": "Organization",
+      name: "Byten",
+      url: site.url,
+    },
+    image: project.screenshots?.[0]?.src
+      ? `${site.url}${project.screenshots[0].src}`
+      : `${site.url}/og.png`,
+  };
+
   return (
     <article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <div className="site-container">
         <div className="case-hero">
           <div className="case-hero__grid">
