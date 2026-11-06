@@ -1,7 +1,7 @@
 # 3. shadcn/ui Component Architecture & Logo Brand Theming
 
 - **Date**: 2026-10-25
-- **Status**: Accepted
+- **Status**: Superseded by ADR 0004
 - **Deciders**: Byten Engineering Team & Antigravity Assistant
 
 ---

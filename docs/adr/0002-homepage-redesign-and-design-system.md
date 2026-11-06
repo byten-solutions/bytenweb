@@ -1,7 +1,7 @@
 # 2. Homepage Redesign & Obsidian Technical Design System
 
 - **Date**: 2026-10-25
-- **Status**: Accepted
+- **Status**: Superseded by ADR 0004
 - **Deciders**: Byten Engineering Team & Antigravity Assistant
 
 ---

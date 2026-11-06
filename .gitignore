@@ -40,8 +40,14 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# local tooling and review evidence
+/.tmp/
+/.npm-cache/
+/.impeccable/
+
 # graphify cache
 graphify-out/cache/
+__pycache__/
 
 # local native binaries
 .agents/skills/impeccable/scripts/bin/

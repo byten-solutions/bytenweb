@@ -1,0 +1,47 @@
+export const site = {
+  name: "Byten",
+  legalName: "Byten",
+  url: "https://www.byten.in",
+  email: "bytensolution@gmail.com",
+  phone: "+91 9633581368",
+  phoneHref: "+919633581368",
+  domain: "www.byten.in",
+  instagram: "https://www.instagram.com/byten.in",
+  instagramHandle: "@byten.in",
+  description:
+    "Byten is a digital engineering company building enterprise platforms, mobile apps, client websites, and service integrations that have to keep working.",
+  tagline: "Software that holds.",
+  location: "Ozhukur, Morayur, Malappuram, Kerala, India — 673642",
+  address: {
+    street: "Ozhukur, Morayur",
+    city: "Malappuram",
+    state: "Kerala",
+    postalCode: "673642",
+    country: "India",
+    full: "Ozhukur, Morayur, Malappuram, Kerala — 673642, India",
+    display: "Ozhukur, Malappuram, Kerala",
+  },
+  timeZone: "Asia/Kolkata",
+  nav: [
+    { label: "Work", href: "/work" },
+    { label: "Capabilities", href: "/capabilities" },
+    { label: "Process", href: "/process" },
+    { label: "Studio", href: "/studio" },
+    { label: "Contact", href: "/contact" },
+  ],
+  footerNav: [
+    { label: "Work", href: "/work" },
+    { label: "Capabilities", href: "/capabilities" },
+    { label: "Process", href: "/process" },
+    { label: "Studio", href: "/studio" },
+    { label: "Contact", href: "/contact" },
+  ],
+} as const;
+
+export const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/byten.in",
+    handle: "@byten.in",
+  },
+];
